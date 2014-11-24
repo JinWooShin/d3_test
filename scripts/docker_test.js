@@ -2,9 +2,9 @@
  * Created by Jin Woo Shin on 11/24/2014.
  */
 var app = angular.module('wcDocker.demo', ['ui.bootstrap']);
+
 app.controller('wcDockerCtrl', function($scope) {
     var myDocker = new wcDocker('.dockerContainer');
-
     myDocker.registerPanelType('Right Panel', {
         onCreate: function (myPanel) {
            // myPanel.layout().$table.css('padding', '10px');
@@ -34,5 +34,17 @@ app.controller('wcDockerCtrl', function($scope) {
         });
         myDocker.addPanel('Right Panel_'+$scope.dockerIndex, wcDocker.DOCK_RIGHT);
         $scope.dockerIndex++;
+
     };
+    $scope.savePanel = function() {
+        $scope.data = myDocker.save();
+    }
+    $scope.restorePanel = function() {
+        if($scope.data) {
+            myDocker.restore($scope.data);
+
+        } else {
+           console.log("No previous data");
+        }
+    }
 });

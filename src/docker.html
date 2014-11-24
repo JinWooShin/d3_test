@@ -17,8 +17,11 @@
     <script src="../scripts/docker_test.js"></script>
 </head>
 <body ng-controller="wcDockerCtrl">
+
     <div class="control" style="width:100%; height:50px; background-color: #00b3ee">
         <button type="button" class="btn btn-primary" ng-click="addPanel()" style="margin:10px;">Add</button>
+        <button type="button" class="btn btn-default" ng-click="savePanel()" style="margin: 10px;">Save</button>
+        <button type="button" class="btn btn-default" ng-click="restorePanel()" style="margin: 10px;">Restore</button>
     </div>
     <div class="dockerContainer" style="width:100%; height:100%; background-color: #265a88"></div>
 
