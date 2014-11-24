@@ -61,11 +61,20 @@ function chartFromCSV() {
             .attr("width", barWidth - 1);
         var xAxis = d3.svg.axis()
             .scale(x)
+            .ticks(10)
             .orient("bottom");
         chart.append("g")
             .attr("class", "x axis")
-            .attr("transform", "translate(0, " + height + ")")
+            .attr("transform", "translate(0, " + (height-20) + ")")
             .call(xAxis);
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .ticks(10)
+            .orient("right");
+        chart.append("g")
+            .attr("class", "axis")
+            .attr("transform", "translate("+10+", 0)")
+            .call(yAxis);
     });
 
 }
