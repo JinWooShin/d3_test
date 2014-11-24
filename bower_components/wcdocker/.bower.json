@@ -1,0 +1,42 @@
+{
+  "name": "wcDocker",
+  "description": "wcDocker (Web Cabin Docker) is a page layout framework that gives you dynamic docking panels.",
+  "version": "2.1.0",
+  "keywords": [
+    "css",
+    "js",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://docker.webcabin.org/",
+  "main": [
+    "Build",
+    "Build/Themes"
+  ],
+  "ignore": [
+    "/.*",
+    "favicon.ico",
+    "index.html",
+    "Code",
+    "Compiler",
+    "Extra",
+    "Themes"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "jQuery-contextMenu": "1.6.6",
+    "font-awesome": "4.2.0"
+  },
+  "license": "MIT",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "2911d483d711f96df923d9f826ec88db86d229d2"
+  },
+  "_source": "git://github.com/WebCabin/wcDocker.git",
+  "_target": "~2.1.0",
+  "_originalSource": "wcdocker",
+  "_direct": true
+}
