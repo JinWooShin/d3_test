@@ -4,6 +4,7 @@
 (function(define, angular) {
     'use strict';
     require(['esri/map'], function(Map) {
+
         var esriMap = angular.module('esri.map', []);
 
         esriMap.directive('esriMap', function() {

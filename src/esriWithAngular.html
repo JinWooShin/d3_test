@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css"/>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
 
-    <script src="http://js.arcgis.com/3.9/"></script>
     <script src="../bower_components/angularjs/angular.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="http://js.arcgis.com/3.9/"></script>
     <script src="../bower_components/d3/d3.js"></script>
     <script src="../scripts/esriWithAngular.js"></script>
-    <script>
-        window.dojoConfig = {
-            packages: [{
-                name: 'local',
-                location: '/js'
-            }]
-        };
-    </script>
+
 </head>
 <body>
     <esri-map zoom="4" basemap="street" style="width:100%; height:100%;"></esri-map>
