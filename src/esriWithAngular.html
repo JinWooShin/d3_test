@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="esri.map">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -7,7 +7,7 @@
 
     <script src="http://js.arcgis.com/3.9/"></script>
     <script src="../bower_components/angularjs/angular.js"></script>
-    <script src="../bower_components/d3/d3.js"></script>
+    <!--<script src="../bower_components/d3/d3.js"></script>-->
     <script src="../scripts/esriWithAngular.js"></script>
     <script>
         window.dojoConfig = {
@@ -19,6 +19,6 @@
     </script>
 </head>
 <body>
-    <esri-map zoom="4" basemap="street" style="width:100%; height:100%;"></esri-map>
+    <esri-map id="map" zoom="4" basemap="street" style="width:100%; height:100%;"></esri-map>
 </body>
 </html>
