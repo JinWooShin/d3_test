@@ -4,9 +4,10 @@
 (function(define, angular) {
     'use strict';
     require(['esri/map'], function(Map) {
-        var esriMap = angular.module('esri.map', [])
 
-        .directive('esriMap', function() {
+        var esriMap = angular.module('esri.map', []);
+
+        esriMap.directive('esriMap', function() {
             return {
                 restrict: 'EA',
                 controller: 'MapController',
@@ -14,9 +15,9 @@
                     ctrl.init(element);
                 }
             };
-        })
+        });
 
-        .controller('MapController', ['$rootScope', '$scope', '$attrs', function($rootScope, $scope, $attrs) {
+        esriMap.controller('MapController', ['$rootScope', '$scope', '$attrs', function($rootScope, $scope, $attrs) {
             var self = this;
             var mapDiv, layers = [];
 
